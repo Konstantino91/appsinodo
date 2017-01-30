@@ -35,10 +35,9 @@
 
     <preference name="ios-statusbarstyle" value="black-opaque" />
 
-	<preference name="phonegap-version" value="3.7.0" />
-	<preference name="load-url-timeout" value="50000" />
-  <gap:plugin name="org.apache.cordova.core.inappbrowser" />
-  <gap:plugin name="com.sharinglabs.cordova.plugin.cache" version="1.0.0" />
+  	<preference name="phonegap-version" value="cli-6.3.0" />
+  	<preference name="load-url-timeout" value="50000" />
+
 
 
 

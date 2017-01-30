@@ -168,7 +168,7 @@ function mostrarlistaAsambleas(){
 		$('item',xml).each(function() {
 		  titulo = $(this).find('title').text(); //buscamos el valor que contiene la etiqueta titulo y lo guardamos en la variable titulo
 		  indice = $(this).find('indice').text(); //buscamos el valor que contiene la etiqueta titulo y lo guardamos en la variable indice
-		   $('#lista').append('<div id="docs"><h2 id="'+ indice + '">Asamblea '+i+'</h2></div>');
+		   $('#lista').append('<div class="boton" id="docs"><h2 id="'+ indice + '">Asamblea '+i+'</h2></div>');
 		   i++;
 	  }); //final de leer cada etiqueta noticia
 		mostrarAsamblea();
