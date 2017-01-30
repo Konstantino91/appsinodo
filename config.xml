@@ -35,8 +35,9 @@
 
     <preference name="ios-statusbarstyle" value="black-opaque" />
 
-  	<preference name="phonegap-version" value="cli-6.3.0" />
-  	<preference name="load-url-timeout" value="50000" />
+  
+
+
 
 
 

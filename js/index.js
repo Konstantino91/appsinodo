@@ -1,20 +1,14 @@
 document.addEventListener("deviceready",onDeviceReady,false);
 function onDeviceReady() {
+	alert("Hola");
 	document.addEventListener("backbutton", onBackKeyDown, false);
 	$('#lista').hide();
  	$('#atras').hide();
-	$('#docs').click(function(){
-		document.removeEventListener("backbutton", onBackKeyDown);
-		var ref = window.open('https://drive.google.com/open?id=0BykubDddOzYKMFpLRDROYW9kZDQ&authuser=0', '_system', 'location=yes');
-        ref.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
-        ref.addEventListener('loadstop', function(event) { alert('stop: ' + event.url); });
-        ref.addEventListener('loaderror', function(event) { alert('error: ' + event.message); });
-        ref.addEventListener('exit', function(event) { alert(event.type); });
+	$('#materiales').click(function(){
+		alert("Hola");
 
-		/*ocultarContenido();
-		mostrarlistaDocs();
-	//$('#lista').append("<h3> hola docs </h3>");*/
 	});
+
 
 	$('#atras').click(function(){
 		home= true;
@@ -219,7 +213,7 @@ function entrarADocsA(){
 
 function mostrarDocA(link){
 	document.removeEventListener("backbutton", onBackKeyDown);
-	var ref = window.open(link, '_system', 'location=yes');
+	//var ref = window.open(link, '_system', 'location=yes');
     ref.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
     ref.addEventListener('loadstop', function(event) { alert('stop: ' + event.url); });
     ref.addEventListener('loaderror', function(event) { alert('error: ' + event.message); });
